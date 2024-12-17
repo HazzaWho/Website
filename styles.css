@@ -194,12 +194,10 @@
   }
   
   .sidebar .menu-bar {
-    position: fixed;
     height: calc(100% - 55px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow-y: scroll;
   }
   .menu-bar::-webkit-scrollbar {
     display: none;
