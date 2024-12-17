@@ -465,7 +465,7 @@
   }
 
   .inset {
-    max-width: 30vmin;
+    max-width: 50%;
     margin: 0.25em 1em 1em 0;
     border-radius: 0.25em;
     float: left;
@@ -505,7 +505,7 @@
   }
 
   .wrap:hover .overlay {
-    transform: translateX(-80%);
+    transform: translateX(calc(-100%+30vmin));
   }
   .wrap:hover .image-content1 {
     width: 30vmin;
