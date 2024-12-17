@@ -505,7 +505,7 @@
   }
 
   .wrap:hover .overlay {
-    transform: translateX(30vmin);
+    transform: translateX(calc((-100%)+30vmin));
   }
   .wrap:hover .image-content1 {
     width: 30vmin;
