@@ -265,11 +265,12 @@
   }
   
   .home {
-    position: absolute;
+    /* position: absolute; */
+    position: relative;
     top: 0;
     top: 0;
     left: 250px;
-    height: 100vh;
+    /*height: 100vh;*/
     width: calc(100% - 250px);
     background-color: var(--body-color);
     transition: var(--tran-05);
@@ -280,12 +281,17 @@
     color: var(--text-color);
     padding: 12px 60px;
   }
+
+  .home .text2 {
+    color: var(--text-color);
+    padding: 12px 60px;
+  }
   
-  .sidebar.close ~ .home {
+  .sidebar.close ~ .main .home {
     left: 78px;
-    height: 100vh;
     width: calc(100% - 78px);
   }
+  
   body.dark .home .text {
     color: var(--text-color);
   }
@@ -309,14 +315,25 @@
     width: calc(100% - 78px);
   }
 
+  .main {
+    position: relative;
+    display:flex; 
+    flex-direction:column
+  }
+
   .projects {
-    position: absolute;
-    top: 200px;
+    position: relative;
     left: 250px;
     height: 100vh;
     width: calc(100% - 250px);
     background-color: var(--body-color);
     transition: var(--tran-05);
+  }
+  .projects .subtitle {
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 12px 0 0 60px;
   }
   .projects .text {
     font-size: 40px;
@@ -325,7 +342,7 @@
     padding: 12px 60px;
   }
   
-  .sidebar.close ~ .projects {
+  .sidebar.close ~ .main .projects {
     left: 78px;
     height: 100vh;
     width: calc(100% - 78px);
@@ -349,15 +366,14 @@
   }
 
   .wrap {
-    position: absolute;
-    top: 260px;
-    left: 310px;
+    position: relative;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: calc(100% - 350px);
+    /* width: calc(100% - 350px); */
+    width: calc(100% - 100px);
     height: 65vmin;
-    margin: 2rem auto;
+    margin: 1rem auto;
     border: 8px solid;
     border-color: var(--card-color);
     transition: 0.3s ease-in-out;
@@ -401,12 +417,51 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 80%;
+    width: 100%; 
     height: 100%;
     background-image: url(examplequeueapp.png);
     background-size: cover;
     transition: 0.3s ease-in-out;
-    
+  }
+  .image-content2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%; 
+    height: 100%;
+    background-image: url(originsexample.png);
+    background-size: cover;
+    transition: 0.3s ease-in-out;
+  }
+  .image-content3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%; 
+    height: 100%;
+    background-image: url(Doorfinal.png);
+    background-size: cover;
+    transition: 0.3s ease-in-out;
+  }
+  .image-content4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%; 
+    height: 100%;
+    background-image: url(discordbotexample.png);
+    background-size: cover;
+    transition: 0.3s ease-in-out;
+  }
+  .image-content5 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%; 
+    height: 100%;
+    background-image: url(datawarehouse.png);
+    background-size: cover;
+    transition: 0.3s ease-in-out;
   }
 
   .inset {
@@ -454,6 +509,19 @@
   }
   .wrap:hover .image-content1 {
     width: 30vmin;
+  }
+  .wrap:hover .image-content2 {
+    width: 30vmin;
+  }
+  .wrap:hover .image-content4 {
+    width: 30vmin;
+  }
+  .wrap:hover .image-content5 {
+    width: 30vmin;
+  }
+  .wrap:hover .image-content3 {
+    width: 30vmin;
+    background-image: url(Steve_the_snail.png);
   }
   .wrap:hover .overlay-content {
     border: none;
