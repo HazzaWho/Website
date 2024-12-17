@@ -465,7 +465,7 @@
   }
 
   .inset {
-    max-width: 50%;
+    max-width: 30vmin;
     margin: 0.25em 1em 1em 0;
     border-radius: 0.25em;
     float: left;
